@@ -1,0 +1,8 @@
+<app-cabecalho></app-cabecalho>
+<main>
+<app-paciente-inserir>
+(pacienteAdicionado)="onPacienteAdicionado($event)"
+</app-paciente-inserir>
+<app-paciente-lista [pacientes]="pacientes"></app-paciente-lista>
+</main>
+

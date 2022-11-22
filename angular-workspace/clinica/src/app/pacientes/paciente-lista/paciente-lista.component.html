@@ -1,0 +1,13 @@
+<mat-accordion *ngIf="pacientes.length > 0">
+<mat-expansion-panel *ngFor="let paciente of pacientes">
+<mat-expansion-panel-header
+>Nome: {{ paciente.nome }}</mat-expansion-panel-header
+>
+<p>Fone: {{ paciente.fone }}</p>
+<hr/>
+<p>Email: {{ paciente.email }}</p>
+</mat-expansion-panel>
+</mat-accordion>
+<p class="mat-body-1" style="text-align: center;" *ngIf="pacientes.length <= 0">
+    Nenhum Paciente cadastrado
+    </p>

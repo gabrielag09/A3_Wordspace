@@ -1,0 +1,17 @@
+<mat-card>
+  <form (submit)="onAdicionarPaciente(pacienteForm)" #pacienteForm="ngForm">
+    <mat-form-field>
+    <input type="text" matInput placeholder="nome" name="nome" ngModel />
+    </mat-form-field>
+    <mat-form-field>
+    <input type="text" matInput placeholder="fone" name="fone" ngModel />
+    </mat-form-field>
+    <mat-form-field>
+    <input type="text" matInput placeholder="email" name="email" ngModel />
+    </mat-form-field>
+    <button color="primary" mat-raised-button>
+    Inserir Paciente
+    </button>
+   </form>
+</mat-card>
+
